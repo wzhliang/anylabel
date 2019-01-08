@@ -1,0 +1,4 @@
+CGO_ENABLED=0 GOOS=linux go build -a -installsuffix cgo -o any-label .
+docker build --no-cache -t registry.cn-hangzhou.aliyuncs.com/wise2c-dev/any-label:v1 .
+
+docker push registry.cn-hangzhou.aliyuncs.com/wise2c-dev/any-label:v1
